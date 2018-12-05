@@ -68,6 +68,7 @@ public class MoveSelector : MonoBehaviour
         GameManager.instance.DeselectPiece(movingPiece);
         movingPiece = null;
         TileSelector selector = GetComponent<TileSelector>();
+        GameManager.instance.NextPlayer();
         selector.EnterState();
     }
 }

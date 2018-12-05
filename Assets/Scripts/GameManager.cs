@@ -206,4 +206,10 @@ public class GameManager : MonoBehaviour
 
         return locations;
     }
+    public void NextPlayer()
+    {
+        Player tempPlayer = currentPlayer;
+        currentPlayer = otherPlayer;
+        otherPlayer = tempPlayer;
+    }
 }
